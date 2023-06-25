@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+[data-vista] {
+    position: relative;
+    min-height: 100vh;
+    display: none;
+}
+
+[data-vista="inicio"] {
+    display: block;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+#eliminarTodo {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+
+#info {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+#nuevo {
+    position: fixed;
+    background: none;
+    border: none;
+    bottom: 1rem;
+    right: 1rem;
+    color: rgb(195, 153, 214);
+    z-index: 20000;
+    transition: all .3s ease;
+}
+
+#nuevo:hover {
+    color: rgb(149, 118, 163);
+}
+
+.volver {
+    position: absolute;
+    background: none;
+    border: none;
+    color: #fff;
+    left: 1rem;
+    top: 1rem;
+    transition: all .3s ease;
+}
+
+.volver:hover{
+    cursor: pointer;
+    color: rgb(195, 153, 214)
+}
+
+.cerrar {
+    position: absolute;
+    background: none;
+    border: none;
+    color: #fff;
+    right: 1rem;
+    top: 1rem;
+    transition: all .3s ease;
+}
+
+.cerrar:hover{
+    cursor: pointer;
+    color: rgb(195, 153, 214)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #181818;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor {
+    max-width: 1120px;
+    margin-inline: auto;
+    margin-block: 2rem;
+}
+
+.navbar {
+    height: 60px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f4f4f4;
+    padding: 0 4rem;
+}
+
+.navbar h1 {
+    color: rgb(195, 153, 214);
+}
+
+.boton {
+    background: none;
+    padding: 0;
+    border: none;
+    color: #f4f4f4;
+    transition: all .3s ease;
+}
+
+.boton:hover {
+    color: rgb(195, 153, 214);
+    cursor: pointer;
+}
+
+.card {
+    background-color: #363535;
+    width: 100%;
+    border-radius: .5rem;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    color: rgb(195, 153, 214);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: rgb(241, 220, 252);
+}
+
+.boton_eliminar {
+    display: flex;
+    justify-content: end;
+}
+
+.eliminar {
+    color: rgb(195, 153, 214);
+}
+
+.formulario_ingreso {
+    background-color: #363535;
+    padding: 5rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formulario_campo input, .formulario_campo textarea {
+    border: none;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: .125rem;
+    padding-left: .5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.formulario_campo textarea {
+    padding-top: .25rem;
+}
+
+.formulario_campo input {
+    height: 40px;
+}
+
+.formulario_boton input {
+    width: 100%;
+    border: none;
+    height: 40px;
+    border-radius: .25rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+    background-color: rgb(195, 153, 214);
+    transition: all .3s ease;
+}
+
+.formulario_boton input:hover {
+    cursor: pointer;
+    background-color: rgb(149, 118, 163);
+}
+
+.miembros {
+    background-color: #363535;
+    padding: 5rem;
+    border-radius: .5rem;
+}
+
+.miembros ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.lista {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: .25rem;
+}
+
+.lista_titulo {
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    .navbar h1 {
+        font-size: 1.5rem;
+    }
+    .formulario_ingreso {
+        padding: 3rem;
+    }
+    .miembros {
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .formulario_ingreso {
+        padding: 1.5rem;
+    }
+    .miembros {
+        padding: 1.5rem;
+    }
+}
